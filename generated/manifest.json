@@ -3,7 +3,7 @@
     {
       "name": "Bookshelf",
       "description": "Bookshelf - Library designed for mapmakers",
-      "pack_format": 48,
+      "pack_format": 57,
       "modules": [
         {
           "name": "bs.biome",
@@ -194,6 +194,21 @@
           "module_path": "datapacks/Bookshelf/data/bs.block",
           "features": [
             {
+              "name": "emit_block_particle",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#produce",
+              "authors": [
+                "theogiraudet"
+              ],
+              "created": {
+                "date": "2024/10/09",
+                "version": "1.21.1"
+              },
+              "updated": {
+                "date": "2024/10/09",
+                "version": "1.21.1"
+              }
+            },
+            {
               "name": "fill_block",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#fill",
               "authors": [
@@ -204,7 +219,7 @@
                 "version": "1.20.4"
               },
               "updated": {
-                "date": "2024/06/16",
+                "date": "2024/09/11",
                 "version": "1.21"
               }
             },
@@ -222,7 +237,7 @@
                 "version": "1.21"
               },
               "updated": {
-                "date": "2024/06/16",
+                "date": "2024/09/11",
                 "version": "1.21"
               }
             },
@@ -237,7 +252,7 @@
                 "version": "1.20.4"
               },
               "updated": {
-                "date": "2024/06/16",
+                "date": "2024/09/11",
                 "version": "1.21"
               }
             },
@@ -480,7 +495,7 @@
             },
             {
               "name": "spawn_block_display",
-              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#spawn",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#produce",
               "authors": [
                 "Aksiome",
                 "theogiraudet"
@@ -496,7 +511,7 @@
             },
             {
               "name": "spawn_falling_block",
-              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#spawn",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#produce",
               "authors": [
                 "Aksiome",
                 "theogiraudet"
@@ -512,7 +527,7 @@
             },
             {
               "name": "spawn_solid_block_display",
-              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#spawn",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/block.html#produce",
               "authors": [
                 "Aksiome",
                 "theogiraudet"
@@ -636,6 +651,66 @@
               "updated": {
                 "date": "2023/10/22",
                 "version": "1.20.2"
+              }
+            }
+          ]
+        },
+        {
+          "name": "bs.generate",
+          "display_name": "Generate",
+          "description": "Generate diverse terrains and landscapes, incorporating natural features.",
+          "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/generate.html",
+          "authors": [
+            "Aksiome"
+          ],
+          "module_path": "datapacks/Bookshelf/data/bs.generate",
+          "dependencies": [
+            "bs.random"
+          ],
+          "features": [
+            {
+              "name": "fractal_shape_2d",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/generate.html#shape-2d",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/09",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/09",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "shape_2d",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/generate.html#shape-2d",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/09",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/09",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "simplex_shape_2d",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/generate.html#shape-2d",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/09",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/09",
+                "version": "1.21"
               }
             }
           ]
@@ -786,8 +861,8 @@
                 "version": "1.20.3"
               },
               "updated": {
-                "date": "2024/03/30",
-                "version": "1.20.4"
+                "date": "2024/09/28",
+                "version": "1.21"
               }
             },
             {
@@ -801,8 +876,38 @@
                 "version": "1.20.3"
               },
               "updated": {
-                "date": "2024/03/30",
-                "version": "1.20.4"
+                "date": "2024/09/28",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "is_entity_in_block",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/hitbox.html#is-inside",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/28",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/28",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "is_entity_in_blocks",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/hitbox.html#is-inside",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/28",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/28",
+                "version": "1.21"
               }
             },
             {
@@ -816,8 +921,8 @@
                 "version": "1.20.3"
               },
               "updated": {
-                "date": "2024/03/30",
-                "version": "1.20.4"
+                "date": "2024/09/28",
+                "version": "1.21"
               }
             },
             {
@@ -831,8 +936,8 @@
                 "version": "1.20.3"
               },
               "updated": {
-                "date": "2024/03/30",
-                "version": "1.20.4"
+                "date": "2024/09/28",
+                "version": "1.21"
               }
             }
           ]
@@ -913,6 +1018,66 @@
             "bs.position"
           ],
           "features": [
+            {
+              "name": "as_children",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#relationships",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "as_parent",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#relationships",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "at_children",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#relationships",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "at_parent",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#relationships",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              }
+            },
             {
               "name": "create_link_ata",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#create-link",
@@ -1122,6 +1287,21 @@
               "updated": {
                 "date": "2023/09/11",
                 "version": "1.20.1"
+              }
+            },
+            {
+              "name": "remove_link",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/link.html#remove-link",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/07",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/07",
+                "version": "1.21"
               }
             },
             {
@@ -2340,7 +2520,7 @@
               }
             },
             {
-              "name": "fractal_noise",
+              "name": "fractal_noise_2d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome"
@@ -2355,7 +2535,7 @@
               }
             },
             {
-              "name": "fractal_noise_2d",
+              "name": "fractal_noise_mat_2d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome"
@@ -2412,7 +2592,7 @@
               ]
             },
             {
-              "name": "simplex_noise",
+              "name": "simplex_noise_2d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome"
@@ -2430,7 +2610,7 @@
               }
             },
             {
-              "name": "simplex_noise_2d",
+              "name": "simplex_noise_mat_2d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome"
@@ -2478,7 +2658,7 @@
               }
             },
             {
-              "name": "white_noise_1d",
+              "name": "white_noise_mat_1d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome",
@@ -2494,7 +2674,7 @@
               }
             },
             {
-              "name": "white_noise_2d",
+              "name": "white_noise_mat_2d",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/random.html#noise",
               "authors": [
                 "Aksiome",
@@ -3018,7 +3198,8 @@
           ],
           "module_path": "datapacks/Bookshelf/data/bs.view",
           "dependencies": [
-            "bs.hitbox"
+            "bs.hitbox",
+            "bs.raycast"
           ],
           "features": [
             {
@@ -3381,7 +3562,7 @@
     {
       "name": "Bookshelf Dev",
       "description": "Bookshelf Development Kit - Library designed for mapmakers",
-      "pack_format": 48,
+      "pack_format": 57,
       "modules": [
         {
           "name": "bs.dump",
@@ -3422,6 +3603,21 @@
           "module_path": "datapacks/Bookshelf Dev/data/bs.log",
           "features": [
             {
+              "name": "clear_history",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/log.html#history",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/06",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/06",
+                "version": "1.21"
+              }
+            },
+            {
               "name": "debug",
               "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/log.html#debug",
               "authors": [
@@ -3432,8 +3628,8 @@
                 "version": "23w31a"
               },
               "updated": {
-                "date": "2024/05/08",
-                "version": "1.20.6"
+                "date": "2024/09/06",
+                "version": "1.21"
               }
             },
             {
@@ -3447,8 +3643,23 @@
                 "version": "23w31a"
               },
               "updated": {
-                "date": "2024/05/08",
-                "version": "1.20.6"
+                "date": "2024/09/06",
+                "version": "1.21"
+              }
+            },
+            {
+              "name": "history",
+              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/log.html#history",
+              "authors": [
+                "Aksiome"
+              ],
+              "created": {
+                "date": "2024/09/06",
+                "version": "1.21"
+              },
+              "updated": {
+                "date": "2024/09/06",
+                "version": "1.21"
               }
             },
             {
@@ -3462,23 +3673,8 @@
                 "version": "23w31a"
               },
               "updated": {
-                "date": "2024/05/08",
-                "version": "1.20.6"
-              }
-            },
-            {
-              "name": "tick",
-              "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/log.html",
-              "authors": [
-                "Aksiome"
-              ],
-              "created": {
-                "date": "2023/11/13",
-                "version": "1.20.2"
-              },
-              "updated": {
-                "date": "2024/02/27",
-                "version": "1.20.4"
+                "date": "2024/09/06",
+                "version": "1.21"
               }
             },
             {
@@ -3492,8 +3688,8 @@
                 "version": "23w31a"
               },
               "updated": {
-                "date": "2024/05/08",
-                "version": "1.20.6"
+                "date": "2024/09/06",
+                "version": "1.21"
               }
             }
           ]
